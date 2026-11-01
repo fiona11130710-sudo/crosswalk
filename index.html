@@ -13,6 +13,23 @@
         input[type="file"] { margin: 15px 0; }
     </style>
 </head>
+<!-- 1. 頂部一頁式標題區 -->
+<div style="background: #1e3c72; color: white; padding: 40px 20px; text-align: center; font-family: sans-serif;">
+    <h1 style="margin: 0; font-size: 2rem;">🚦 AI 智慧道路硬體危險度評估系統</h1>
+    <p style="margin-top: 10px; font-size: 1.1rem; color: #e0e0e0;">
+        結合 YOLO 物件偵測與靜態幾何規則引擎，即時評估路口斑馬線退縮距離與安全風險
+    </p>
+</div>
+
+<!-- 2. 靜態危險度算則說明區 -->
+<div style="max-width: 800px; margin: 20px auto; padding: 15px; background: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+    <h3 style="margin-top: 0; color: #333;">💡 靜態危險度評估標準</h3>
+    <ul style="margin-bottom: 0; line-height: 1.6;">
+        <li>🔴 <b>退縮距離不足（< 18%）：</b>斑馬線過於貼近車頭/轉角死角，判定為高風險。</li>
+        <li>🔴 <b>空間壓迫感（> 25%）：</b>斑馬線佔據畫面高度過大，屬近距離視線盲區。</li>
+        <li>🟢 <b>安全退縮標準：</b>高於緩衝距離，符合道路硬體退縮規範。</li>
+    </ul>
+</div>
 <body>
 
 <div class="container">
